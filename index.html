@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavascriptBatch-1_67</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body class="s_body">
+        
+
+        <script>
+            //1. Create a header element/tag using JS
+            var h =document.createElement('header');
+            h.innerHTML = "Header"
+            console.log(h);
+
+            //2. Now tell JS to place this header element inside body tag
+            document.querySelector('.s_body').appendChild(h);
+
+            document.querySelector('header').setAttribute('class',"s_header");
+            // console.log(x);
+
+            document.body.style.margin = '0px';
+
+            var hx = document.getElementsByClassName('s_header');
+            // console.log(x)
+            // x[0].style.border = "2px dashed red";
+            hx[0].style.width = "100%";
+            hx[0].style.height = "80px";
+            hx[0].style.backgroundColor = 'grey';
+            hx[0].style.textAlign = 'center';
+            hx[0].style.lineHeight = '80px';
+            hx[0].style.fontSize = '4rem';
+            hx[0].style.fontWeight = 'bold';
+
+            let n = document.createElement('nav');
+            n.innerHTML = 'nav'
+
+            document.body.appendChild(n);
+
+
+
+            var aside1 = document.createElement('aside');
+            aside1.innerHTML = 'Aside1';
+
+            var section = document.createElement('section');
+            section.innerHTML = 'Section';
+
+            var aside2 = document.createElement('aside');
+            aside2.innerHTML = 'Aside2';
+
+            document.body.appendChild(aside1);
+            document.body.appendChild(section);
+            document.body.appendChild(aside2);
+
+            var arr = document.querySelectorAll('aside');
+            console.log(arr);
+            arr.forEach(function(currentValue, index, arr){
+                arr[index].style.display = 'inline-block';
+            });
+
+
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            document.querySelector('section').style.display = 'inline-block';
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            let f = document.createElement('footer');
+            f.innerHTML = 'Footer'
+
+            
+            document.body.appendChild(f);
+
+            var fx = document.querySelectorAll('footer');
+
+            fx[0].setAttribute('data-footer','s_footer')
+
+            document.querySelector('footer[data-footer="s_footer"]').style.textAlign = 'center'
+            document.querySelector('[data-footer="s_footer"]').style.backgroundColor = 'grey';
+            document.querySelector('[data-footer]').style.lineHeight = '80px';
+
+            var fxx  =document.querySelector('footer');
+            fxx.style.width = "100%";
+            fxx.style.height = "80px";
+            fxx.style.textAlign = 'center';
+            fxx.style.fontSize = '4rem';
+            fxx.style.fontWeight = 'bold';
+
+
+            // let fx = document.getElementById('#s_footer');
+
+            // fx[0].style.width = "100%";
+            // fx[0].style.height = "80px";
+            // fx[0].style.backgroundColor = 'grey';
+            // fx[0].style.textAlign = 'center';
+            // fx[0].style.lineHeight = '80px';
+            // fx[0].style.fontSize = '4rem';
+            // fx[0].style.fontWeight = 'bold';
+
+            
+
+
+        </script>
+    </body>
+</html>

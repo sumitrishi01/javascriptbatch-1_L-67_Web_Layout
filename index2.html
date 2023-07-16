@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index2</title>
+    </head>
+    <body>
+        
+
+        <script>
+            var h = document.createElement('header');
+            h.setAttribute('class',"s_header")
+            var m = document.createElement('div');
+            var f = document.createElement('footer');
+            h.innerHTML = "Header";
+
+            document.body.appendChild(h);
+            // console.log(hh);             
+            document.body.appendChild(m);
+            document.querySelector('header.s_header ~ div').setAttribute('class','s_main');
+
+            var mm = document.getElementsByClassName('s_main');
+            console.log(mm[0]);
+
+            mm[0].style.color = 'red';
+            
+
+
+            document.body.appendChild(f);
+            // console.log(r)
+            document.querySelector('div').innerHTML = "Mainarea";
+            var fe = document.querySelector('div ~ footer');
+
+            fe.innerHTML = "Footer";
+
+            var b = document.createElement('button');
+            b.innerHTML = "Click Me";
+
+            fe.appendChild(b);
+
+            var be = document.getElementsByTagName('button');
+
+            console.log(be[0]);
+
+            //element.addEventlisner(event, function, userCapture);
+
+            //1. funtion defination
+            // function sumit(){ //named function
+
+            // }
+
+            // function(){ //Anonymous function
+                  
+            // }
+
+            be[0].addEventListener('click',function(){
+                alert('You Click Me');
+                h.style.color = "green";
+            });
+        </script>
+    </body>
+</html>
